@@ -1,47 +1,45 @@
-Crowd Count and Density Estimation
-This project implements a real-time crowd counting system using the YOLOv8 object detection model from the Ultralytics library. It detects and counts the number of people in a live webcam feed, displaying the count directly on the video stream.
+# Croud count and Density Estimation:
 
-Features
-Real-time people detection using webcam input
+This project implements a real-time crowd counting system using the YOLOv8 object detection model from the [Ultralytics](https://github.com/ultralytics/ultralytics) library. It detects and counts the number of people in a webcam feed, displaying the count live on the video stream.
 
-Counts and displays the number of people detected per frame
+## Features
 
-Utilizes Ultralytics YOLOv8 for high-accuracy object detection
+- Real-time people detection using webcam input.
+- Counts and displays the number of people detected per frame.
+- Uses Ultralytics YOLOv8 for high-accuracy object detection.
 
-Requirements
-Python 3.8 or higher
+## Requirements
 
-OpenCV
+- Python 3.8+
+- OpenCV
+- Ultralytics (YOLO)
+- A pretrained YOLOv8 model (YOLO_model.pt)
 
-Ultralytics (YOLO)
+## Installation
 
-A pretrained YOLOv8 model file (YOLO_model.pt)
-
-Installation
-Clone the repository:
+1. Clone the repository:
 
 bash
-Copy
-Edit
 git clone https://github.com/your-username/yolo-crowd-counter.git
 cd yolo-crowd-counter
-Install the required packages:
+
+
+2. Install the required Python packages:
 
 bash
-Copy
-Edit
 pip install opencv-python ultralytics
-Add your YOLOv8 model file (YOLO_model.pt) to the project directory.
 
-Usage
-To run the crowd counting system:
+
+3. Add your YOLOv8 model file (e.g., YOLO_model.pt) to the project directory!
+
+# Usage
+## Run the script:
 
 bash
-Copy
-Edit
 python main.py
-A window will open showing the live webcam feed with bounding boxes around detected people.
 
-The total count of people will be displayed in the top-left corner of the video.
+- A window will open showing the live webcam feed with bounding boxes around detected people.
 
-Press q to exit the program.
+- The total count of people will be displayed in the top-left corner.
+
+- Press q to exit.
